@@ -1,5 +1,0 @@
-Nik 10
-Olga 20
-Fed 30
-Nik 50
-Mem 40
