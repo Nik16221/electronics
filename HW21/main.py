@@ -10,9 +10,9 @@ store = Store(items={
     "коробка": 10})
 
 shop = Shop(items={
-    "печенька": 5,
-    "собачка": 5,
-    "коробка": 10})
+    "печенька": 1,
+    "собачка": 1,
+    "коробка": 2})
 
 storages = {
     "магазин": shop,
@@ -30,7 +30,7 @@ def main():
             'Для выхода введите "стоп" или "stop":\n'
         )
 
-        if user_input in ('stop', 'стоп'):
+        if user_input.lower() in ('stop', 'стоп'):
             break
         try:
             request = Request(request=user_input, storages=storages)
